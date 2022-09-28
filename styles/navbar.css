@@ -1,0 +1,236 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* part one */
+
+#accordian>div:nth-child(1){
+    background-color: rgba(10, 10, 10, 0.847);
+    margin: 0;
+    max-height: 35px;
+    overflow: hidden;
+
+
+   
+}
+
+#accordian>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 12px;
+    color: white;
+    justify-content: space-between;
+}
+
+#toggle{
+    margin-left: 12px;
+    font-size: 15px;
+
+}
+#close{
+    font-size: 15px;
+}
+#accordian>div:nth-child(1)>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: -15px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+
+}
+
+#accordian>div:nth-child(1)>div:nth-child(2)>input{
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px 0px 0px 3px;
+    border: 0;
+    width: 18%;
+}
+#accordian>div:nth-child(1)>div:nth-child(2)>p{
+    background-color: rgb(247, 249, 251);
+    border-radius: 0px 3px 3px 0px;
+    border: 0;
+    padding: 8.5px;
+    text-align: center;
+    width: 6%;
+
+
+}
+
+#accordian>div:nth-child(1)>p{
+    text-align: center;
+    margin-top: -8px;
+    font-size: 12px;
+    padding: 8px;
+    color: white;
+
+}
+
+/* part one finish */
+
+/* location part stated */
+
+#accordian>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background-color: rgb(249,250,251);
+    gap: 5px;
+   
+}
+#accordian>div:nth-child(2)>img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 100%;
+
+}
+#accordian>div:nth-child(2)>p{
+    color: rgb(199, 198, 198);
+    margin: 0;
+    padding-left: 8px;
+    font-size: 12px;
+    
+}
+#accordian>div:nth-child(2)>h5{
+    margin: 0;
+}
+
+/* location part finished */
+
+/* logo part started */
+
+#accordian>div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding: 10px;
+
+}
+
+#accordian>div:nth-child(3)>img{
+    width: 13%;
+}
+#accordian>div:nth-child(3)>div:nth-child(2){
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    
+}
+#accordian>div:nth-child(3)>div:nth-child(2)>input{
+    width: 95%;
+    background-color: rgb(249,250,251);
+    border: 1px solid gainsboro;
+    padding: 6.8px;
+    font-size: 16px;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+#accordian>div:nth-child(3)>div:nth-child(2)>i{
+    background-color: red;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    width: 3%;
+    text-align: center;
+    font-size: 22px;
+    padding: 6px;
+    
+
+}
+
+#accordian>div:nth-child(3)>div:nth-child(3){
+   display: grid;
+   grid-template-columns: repeat(3,60px);
+   grid-template-rows: repeat(1,50px);
+   gap: 2px;
+   margin: auto;
+
+
+}
+
+#accordian>div:nth-child(3)>div:nth-child(3)>div{
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    font-size: 12px;
+}
+#accordian>div:nth-child(3)>div:nth-child(3)>div>img{
+    width: 50%;
+}
+
+#accordian>div:nth-child(3)>div:nth-child(3)>div>p{
+    margin-top: -1px;
+}
+
+#accordian>div:nth-child(3)>button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 9px 15px;
+    border:none;
+    border-radius: 5px;
+}
+
+/* logo part finish */
+
+/* tab part started */
+
+#accordian>div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    padding: 6px 20px;
+
+
+}
+
+#accordian>div:nth-child(4)>div{
+    cursor: pointer;
+}
+#accordian>div:nth-child(4)>div>p{
+    margin: 0;
+}
+
+#accordian>div:nth-child(4)>div:hover{
+   text-decoration: underline;
+   text-decoration-color: black;
+   
+}
+#accordian>div:nth-child(4)>div:last-child>p{
+    color: red;
+
+}
+
+.dropDown{
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    padding: 30px;
+    background-color: white;
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
