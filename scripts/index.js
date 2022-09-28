@@ -34,29 +34,53 @@ function hideSlideLayout(event){
     slideLayout.style.display="none";
 }
 
-let allTabs = document.querySelectorAll("#tabs>div>p");
-let hideMenu =document.querySelectorAll("#tabs>div>p");
+let allTabs = document.querySelectorAll("#tabs");
+let hideMenu =document.querySelectorAll("#tabs");
 hideMenu.forEach(function(el){
-    el.addEventListener("mouseout",function(){
+    el.addEventListener("mouseout",function(event){
         hideTheMenu(event)
     })
 })
 
 allTabs.forEach(function(el){
-    el.addEventListener("mouseover",function(){
+    el.addEventListener("mouseover",function(event){
         showDropDown(event)
     })
+
+    
 })
 
 
 function showDropDown(event){
     event.target.nextElementSibling.style.visibility="visible"
     // body.style.backgroundColor="rgba(0, 0, 0, 0.5)";
+    
 }
+
 
 function hideTheMenu(event){
-    event.target.nextElementSibling.style.visibility="hidden"
+    // event.target.nextElementSibling.style.visibility="hidden"
     // body.style.backgroundColor="white";
+    document.querySelectorAll(".dropDown").forEach(function(el){
+        el.style.visibility="hidden"
+    })
 
 
 }
+
+
+document.querySelector("#leftSlide").addEventListener("click",slideLeft);
+
+
+document.querySelector("#rightSlide").addEventListener("click",rightSlide);
+
+function slideLeft(event){
+    let mydiv = document.querySelector("#budgetCard");
+    mydiv.scrollBy(-350,0)
+}
+
+function rightSlide(event){
+    let mydiv = document.querySelector("#budgetCard");
+    mydiv.scrollBy(350,0)
+}
+
