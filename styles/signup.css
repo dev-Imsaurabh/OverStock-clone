@@ -1,0 +1,155 @@
+#body{
+    background-color: yellow;
+}
+
+#scontainer{
+    width: 48%;
+    margin: auto;
+    margin-top: 16px;
+    display: flex;
+}
+#signup{
+    width: 40%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+#passwordDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#signup>div>div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#vbar{
+    width: 0.5px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: gainsboro;
+
+}
+#signin{
+    width: 40%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 2px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+input:focus{
+    outline: none;
+}
+#scontainer>div>button{
+    padding: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#signup>p{
+    text-align: center;
+    margin: 2px;
+    font-size: 12px;
+}
+a{
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+#bar{
+    height: 0.5px;
+    background-color: gainsboro;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#check{
+
+    padding: 8px;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    background-color: #f9fafc;
+}
+#check>label{
+    font-size: 12px;
+}
+label{
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    margin: 4px;
+}
+h3{
+    font-weight: bolder;
+    color: #2f3337;
+}
+
+#ca{
+    background-color: #0272a2;
+    color: white;
+    border: 0;
+}
+
+#cag{
+    background-color: #f9fafc;
+    border: 1px solid gainsboro;
+    color: gray;
+}
+#ca:hover{
+    background-color: #04638b;
+
+}
+
+
+#si{
+    background-color: #27865f;
+    color: white;
+    margin-top: 8px;
+    border: 0;
+
+}
+
+#si:hover{
+    background-color: #165038;
+
+}
+
+#signin>a{
+    color: #0272a2;
+}
+
+#sfooter{
+    margin-top: 50px;
+    padding: 0px 250px;
+}
+
+#alertBox{
+    width: 48%;
+    margin: auto;
+    height: 38px;
+    margin-top: 200px;
+    display:flex;
+    align-items: center;
+    padding: 0px 16px;
+    font-size: 12px;
+    color: brown;
+    visibility: hidden;
+    border-radius: 5px;
+    border: 0;
+    background-color: #faf2f2;
+}
