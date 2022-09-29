@@ -67,8 +67,25 @@ function isUserAvailable(){
    }
   
   }
-  
 
+
+  document.querySelectorAll(".tab").forEach(function(el){
+    el.addEventListener("click",function(event){
+        switch(event.target.innerText){
+            case "Furniture":
+                window.location.href="fur.html"
+            break
+            case "Rugs":
+                window.location.href="rugs.html"
+                break
+
+        }
+    })
+  })
+
+  document.querySelector("#homepage").addEventListener("click", function (event) {
+    window.location.href = "index.html";
+  });
 
 
 
