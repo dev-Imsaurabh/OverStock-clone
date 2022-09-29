@@ -35,10 +35,12 @@ body{
 #toggle{
     margin-left: 12px;
     font-size: 15px;
+    cursor: pointer;
 
 }
 #close{
     font-size: 15px;
+    cursor: pointer;
 }
 #accordian>div:nth-child(1)>div:nth-child(2){
     display: flex;
@@ -190,6 +192,10 @@ body{
 }
 #accordian>div:nth-child(3)>button:hover{
     background-color: black;
+}
+
+#accordian>div:nth-child(3)>div>div>img{
+    cursor: pointer;
 }
 /* logo part finish */
 
@@ -526,6 +532,10 @@ body{
 #outdoor>div:nth-child(4)>p~p{
     color: red;
     font-weight: bold;
+}
+
+#homepage{
+    cursor: pointer;
 }
 
 
