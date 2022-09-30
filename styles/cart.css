@@ -1,0 +1,204 @@
+#container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
+}
+h2{
+    color: #2f3337;
+    font-weight: normal;
+}
+
+#itemsCon{
+    width: 100%;
+    display: flex;
+
+}
+
+#itemsCon>div:nth-child(1){
+    width: 75%;
+
+}
+
+#itemsCon>div:nth-child(2){
+    width: 20%;
+    position: fixed;
+    right: 0;
+    
+    margin-right: 150px;
+
+
+
+}
+
+#itemsCon>div:nth-child(2)>div:nth-child(1){
+    width: 95%;
+    margin: 2px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    max-height:60px;
+    overflow: hidden;
+}
+
+
+
+
+#itemsCon>div:nth-child(2)>div:nth-child(2){
+    width: 95%;
+    margin: 2px;
+    margin-top: 16px;
+    border: 1px solid gainsboro;
+}
+
+
+#promo>div{
+    display: flex;
+    align-items: center;
+    color: #2f3337;
+    padding: 0px 16px;
+
+    gap: 20px;
+}
+
+#promo>div>button{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+
+}
+fieldset{
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+legend{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+fieldset>input{
+    width: 100%;
+    border: 0;
+    margin: 0;
+    outline: none;
+}
+
+table{
+    width:95%;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    color: #2f3337;
+}
+tr>td:nth-child(2){
+    text-align: right;
+}
+tr:first-child:nth-child(1){
+    font-weight: bold;
+}
+tr:last-child{
+    font-weight: bold;
+}
+tr:nth-child(2)>td:nth-child(2){
+    color: red;
+}
+tr:nth-child(2)>td:nth-child(1){
+    color: gray;
+}
+
+#bar{
+    width: 95%;
+    height: 0.1px;
+
+    background-color: gainsboro;
+    margin: auto;
+    margin-top: 20px;
+}
+h3{
+    text-align: center;
+}
+
+#checkout>button{
+    width: 95%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    border:0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+#cartItems{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+
+#cartItems>div{
+    display: flex;
+    border: 1px;
+    gap: 20px;
+    border: 1px solid gainsboro;
+}
+#cartItems>div>div:nth-child(1){
+    width: 30%;
+    
+}
+#cartItems>div>div:nth-child(2){
+    width: 70%;
+}
+#cartItems>div>div:nth-child(1)>img{
+    width: 100%;
+}
+
+#cartItems>div h3{
+    text-align: left;
+    color: #c7202c;
+    
+}
+#cartItems>div>div:nth-child(2)>div{
+    display: flex;
+    gap: 10px;
+}
+
+#cartItems>div>div fieldset{
+    width: 50px;
+}
+#cartItems select{
+    border: none;
+    outline: none;
+}
+#cartItems>div>div:nth-child(2)>p:last-child{
+    color:#2f3337;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#cartItems>div h4{
+    color:#2f3337;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#cartItems>div p:nth-child(2){
+    color: #c7202c;
+}
+
+#cartItems>div p:nth-child(1){
+    color: #2f3337;
+    text-decoration: line-through;
+}
+
