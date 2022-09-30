@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View product</title>
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/view.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"> </script>
-    <link rel="stylesheet" href="styles/signup.css">
 </head>
 <body>
-
-    <!-- navbar -->
-    
     <div id="navbar">
 
         <div id="accordian">
@@ -56,8 +54,8 @@
                 <div>
 
                     <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
-                        <p>Account</p>
+                        <img id="account" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
+                        <p id="username">Account</p>
                     </div>
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
@@ -762,66 +760,56 @@
 
     </div>
 
-    <div id="alertBox">Invalid details.</div>
+    <div id="vcon">
 
-    <div id="scontainer">
-
-        <div id="signup">
-            <h3>Create Account</h3>
-            <label for="">Email Address*</label>
-            <input id="email" type="email" placeholder="Email">
-            <div id="passwordDiv">
-                <div>
-                    <label for="">Create Password*</label>
-                    <input id="pass" type="password" placeholder="password">
-
-                </div>
-                <div>
-                    <label for="">Confirm Password*</label>
-                    <input id="cpass" type="password" placeholder="Confirm Password">
-
-                </div>
-            </div>
-
-            <div id="check">
-                <input type="checkbox" name="" id="">
-                <label for="">Sign up today for exclusive offers from Overstock.com delivered right to your inbox**</label>
-            </div>
-
-            <button id="ca">Create Account</button>
-            <div id="bar"></div>
-            <button id="cag">Continue as Guest</button>
-            <p>By creating an account or continuing as a Guest, you agree to our <a href="">Terms & Conditions</a>  and <a href="">Privacy Policy.</a> </p>
-            <p><a href="">Terms & Conditions</a> |<a href="">Privacy Policy.</a><br>**You can unsubscribe at any time</p>
+        <div id="vconp1">
+            <img id="image" src="" alt="">
+            <img src="/assets/Screenshot 2022-09-30 111334.png" alt="">
         </div>
+        <div id="vconp2">
+            <h2 id="name"></h2>
+            <img src="/assets/Screenshot 2022-09-30 111019.png" alt="">
+            <h3>Sale Starts at INR&nbsp<span id="price"></span></h3>
+            <div id="quantity">
+                <select name="quan" id="quan">
+                    <option value="1">Quantity:1</option>
+                    <option value="2">Quantity:2</option>
+                    <option value="3">Quantity:3</option>
+                    <option value="4">Quantity:4</option>
+                    <option value="5">Quantity:5</option>
+                    <option value="6">Quantity:6</option>
+                    <option value="7">Quantity:7</option>
+                    <option value="8">Quantity:8</option>
+                    <option value="9">Quantity:9</option>
+                    <option value="10">Quantity:10</option>
+                    <option value="11">Quantity:11</option>
+                    <option value="12">Quantity:12</option>
+                    <option value="13">Quantity:13</option>
+                    <option value="14">Quantity:14</option>
+                    <option value="15">Quantity:15</option>
+                    <option value="16">Quantity:16</option>
+                    <option value="17">Quantity:17</option>
+                    <option value="18">Quantity:18</option>
+                    <option value="19">Quantity:19</option>
+                    <option value="20">Quantity:20</option>
+                </select>
+                <button id="cartBtn"> <span><i class="fa-solid fa-cart-plus"></i></span> Add to cart</button>
+            </div>
 
-        <div id="vbar"></div>
-        <div id="signin">
-            <h3>Sign In</h3>
-
-            <label for="">Email Address*</label>
-            <input type="email" name="" id="uemail" placeholder="Email">
-
-            <label for="">Passsword*</label>
-            <input type="password" placeholder="Password" id="upass">
-
-            <button id="si">Sign In</button>
-
-            <a href="">Forgot your password?</a>
+            <img src="/assets/Screenshot 2022-09-30 105748.png" alt="">
 
 
 
+            
 
         </div>
 
     </div>
 
-    <div id="sfooter">
-        <img src="assets/Screenshot 2022-09-29 101714.png" alt="">
-    </div>
+
     
 </body>
 </html>
 <script src="/scripts/navbar.js"></script>
 <script src="/scripts/dropDown.js"></script>
-<script src="/scripts/signup.js"></script>
+<script src="/scripts/view.js"></script>

@@ -71,6 +71,7 @@ function isUserAvailable(){
 
   document.querySelectorAll(".tab").forEach(function(el){
     el.addEventListener("click",function(event){
+        console.log(event.target.innerText)
         switch(event.target.innerText){
             case "Furniture":
                 window.location.href="fur.html"
@@ -87,5 +88,8 @@ function isUserAvailable(){
     window.location.href = "index.html";
   });
 
+  document.querySelector("#account").addEventListener("click", function (event) {
+    window.location.href = "signup.html";
+  });
 
 

@@ -13,9 +13,7 @@ function rightSlide(event) {
   mydiv.scrollBy(350, 0);
 }
 
-document.querySelector("#account").addEventListener("click", function (event) {
-  window.location.href = "signup.html";
-});
+
 
 
 
