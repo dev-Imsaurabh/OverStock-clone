@@ -1,0 +1,71 @@
+#vcon{
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+}
+
+#vconp1{
+    width: 50%;
+}
+
+#vconp1>img{
+    width: 100%;
+
+
+}
+h2{
+    font-weight: normal;
+    color: #2f3337;
+}
+#vconp2{
+    width: 50%;
+    padding: 0px 30px;
+}
+#vconp2>div{
+width: 100%;
+display: flex;
+margin-top: 40px;
+gap: 10px;
+}
+#vconp2>div>select{
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#vconp2>div>button{
+    width: 40%;
+    position: relative;
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #27865f;
+    color: white;
+    cursor: pointer;
+}
+
+#vconp2>div>button:hover{
+    background-color: #19533b;
+
+}
+
+h3{
+    margin-top: 16px;
+    color: red;
+}
+
+#vconp2>img:last-child{
+    width: 100%;
+    margin-top: 40px;
+}
+#vconp2>div>button>span>i{
+    position: absolute;
+    left: 0;
+    margin-left: 16px;
+}
+

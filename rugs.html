@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furniture</title>
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/fur.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"> </script>
-    <link rel="stylesheet" href="styles/signup.css">
 </head>
+
 <body>
 
-    <!-- navbar -->
-    
     <div id="navbar">
 
         <div id="accordian">
@@ -56,8 +57,8 @@
                 <div>
 
                     <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
-                        <p>Account</p>
+                        <img id="account" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
+                        <p id="username">Account</p>
                     </div>
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
@@ -762,66 +763,139 @@
 
     </div>
 
-    <div id="alertBox">Invalid details.</div>
-
-    <div id="scontainer">
-
-        <div id="signup">
-            <h3>Create Account</h3>
-            <label for="">Email Address*</label>
-            <input id="email" type="email" placeholder="Email">
-            <div id="passwordDiv">
-                <div>
-                    <label for="">Create Password*</label>
-                    <input id="pass" type="password" placeholder="password">
-
-                </div>
-                <div>
-                    <label for="">Confirm Password*</label>
-                    <input id="cpass" type="password" placeholder="Confirm Password">
-
-                </div>
+    <div id="container">
+        <p>Home Decor/Rugs/Area Rugs</p>
+        <h1>Area Rugs</h1>
+        <!-- <div id="cp1">
+            <div>
+                <p>Sofas & Couches</p>
+                <p>Sectional Sofas</p>
+                <p>Coffee, Sofa & End Tables</p>
+                <p>Accent Chairs</p>
+                <p>Living Room Sets</p>
+                <p>TV Stands</p>
+                <p><i class="fa-solid fa-bookmark"></i>&nbspShop All Living Room <br> Furniture on Sale</p>
             </div>
-
-            <div id="check">
-                <input type="checkbox" name="" id="">
-                <label for="">Sign up today for exclusive offers from Overstock.com delivered right to your inbox**</label>
+            <div>
+                <img src="assets/Screenshot 2022-09-30 075531.png" alt="">
             </div>
-
-            <button id="ca">Create Account</button>
-            <div id="bar"></div>
-            <button id="cag">Continue as Guest</button>
-            <p>By creating an account or continuing as a Guest, you agree to our <a href="">Terms & Conditions</a>  and <a href="">Privacy Policy.</a> </p>
-            <p><a href="">Terms & Conditions</a> |<a href="">Privacy Policy.</a><br>**You can unsubscribe at any time</p>
+        </div> -->
+        <!-- <h2>Shop by Category</h2> -->
+        <!-- <div id="cp2">
+            <div>
+                <h6>Sale</h6>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/da8e341a52b0b4168f5531527177130eec875ca8/Carson-Carrington-Odhult-Tufted-Contemporary-Tuxedo-Sofa.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>Sofas & Couches</p>
+            </div>
+            <div>
+                <h6>Sale</h6>
+                <img src=https://ak1.ostkcdn.com/images/products/22341232/Candace-Mid-Century-Modern-Fabric-Arm-Chair-and-Loveseat-Set-by-Christopher-Knight-Home-087d71b4-c7d8-4352-b7f5-ac19c5a60ce2_1000.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>Living Room Sets</p>
+            </div>
+            <div>
+                <h6>Sale</h6>
+                <img src="https://ak1.ostkcdn.com/images/products/24151999/Welles-Mid-Century-2-Piece-Chaise-Sectional-Sofa-Set-With-Tufted-by-Christopher-Knight-Home-62f39e28-0a20-4594-8815-be5fb283c2b1_1000.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>Sectional Sofas</p>
+            </div>
+            <div>
+                <h6>Sale</h6>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/cc3e23e59b0b7275ff6cb732d7c2d7f6f18df9e9/The-Grey-Barn-70%22-Rustic-Fireplace-TV-Stand-Console.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>TV Stands & Entertainment Centers
+                    Sale</p>
+            </div>
+            <div>
+                <h6>Sale</h6>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/2c822047c6482dd072478dac0a517f7fd4ba74f2/Berwick-Metal-and-Wood-Nesting-Basket-Tables.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>Console, Coffee & End Tables
+                    Sale</p>
+            </div>
+            <div>
+                <h6>Sale</h6>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/f7e4607f8a2129ab4b1ab22cd1769a61b681c3db/Abbyson-Holloway-Mid-century-Top-Grain-Leather-Pushback-Recliner.jpg?imWidth=320&impolicy=medium"
+                    alt="">
+                <p>Recliner Chairs & Rocking Recliners Sale</p>
+            </div>
+        </div> -->
+        <div id="cp4">
+            <select name="" id="sort">
+                <option value="no">Sort by price</option>
+                <option value="asc">Low to High</option>
+                <option value="dsc">High to Low</option>
+            </select>
         </div>
 
-        <div id="vbar"></div>
-        <div id="signin">
-            <h3>Sign In</h3>
-
-            <label for="">Email Address*</label>
-            <input type="email" name="" id="uemail" placeholder="Email">
-
-            <label for="">Passsword*</label>
-            <input type="password" placeholder="Password" id="upass">
-
-            <button id="si">Sign In</button>
-
-            <a href="">Forgot your password?</a>
-
-
-
+        <div id="cp5">
 
         </div>
 
     </div>
+    <!-- <div id="cp6">
+        <img src="assets/Screenshot 2022-09-29 190743.png" alt="">
+    </div> -->
+    <div id="footer">
+        <div>
+            <div>
+                <h5>MY ACCOUNT</h5>
+                <p>Orders & Returns</p>
+                <p>Email Preferences</p>
+                <p>Account Settings</p>
 
-    <div id="sfooter">
-        <img src="assets/Screenshot 2022-09-29 101714.png" alt="">
+            </div>
+            <div>
+                <h5>LET US HELP</h5>
+                <p>Contact Customer Care</p>
+                <p>Shipping Information</p>
+                <p>Return Policy</p>
+                <p>International Help</p>
+                <p>Accessibility</p>
+            </div>
+            <div>
+                <h5>COMPANY INFORMATION</h5>
+                <p>About Overstock™</p>
+                <p>Contact Us</p>
+                <p>Careers</p>
+                <p>Investor Relations</p>
+                <p>Sell Your Products</p>
+                <p>Supply Chain Transparency</p>
+
+            </div>
+            <div>
+                <h5>MORE WAYS TO SHOP</h5>
+                <p>Tips & Ideas</p>
+                <p>Deals</p>
+                <p>Clearance</p>
+                <p>New Arrivals</p>
+
+            </div>
+        </div>
+
+        <div>
+            <p>© Copyright 2022, Overstock.comⓇ, Inc<br>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+            <div>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>*Promotion Terms</p>
+                <p>Ship to:</p>
+                <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+
+            </div>
+
+        </div>
+
+
+
     </div>
-    
+
+
 </body>
+
 </html>
+
 <script src="/scripts/navbar.js"></script>
 <script src="/scripts/dropDown.js"></script>
-<script src="/scripts/signup.js"></script>
+<script src="/scripts/rugs.js"></script>
