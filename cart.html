@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View product</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/view.css">
+    <link rel="stylesheet" href="/styles/cart.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"> </script>
 </head>
 <body>
+
     <div id="navbar">
 
         <div id="accordian">
@@ -760,49 +761,67 @@
 
     </div>
 
-    <div id="vcon">
+    <div id="container">
 
-        <div id="vconp1">
-            <img id="image" src="" alt="">
-            <img src="/assets/Screenshot 2022-09-30 111334.png" alt="">
-        </div>
-        <div id="vconp2">
-            <h2 id="name"></h2>
-            <img src="/assets/Screenshot 2022-09-30 111019.png" alt="">
-            <h3>Sale Starts at INR&nbsp<span id="price"></span></h3>
-            <div id="quantity">
-                <select name="quan" id="quan">
-                    <option value="1">Quantity:1</option>
-                    <option value="2">Quantity:2</option>
-                    <option value="3">Quantity:3</option>
-                    <option value="4">Quantity:4</option>
-                    <option value="5">Quantity:5</option>
-                    <option value="6">Quantity:6</option>
-                    <option value="7">Quantity:7</option>
-                    <option value="8">Quantity:8</option>
-                    <option value="9">Quantity:9</option>
-                    <option value="10">Quantity:10</option>
-                    <option value="11">Quantity:11</option>
-                    <option value="12">Quantity:12</option>
-                    <option value="13">Quantity:13</option>
-                    <option value="14">Quantity:14</option>
-                    <option value="15">Quantity:15</option>
-                    <option value="16">Quantity:16</option>
-                    <option value="17">Quantity:17</option>
-                    <option value="18">Quantity:18</option>
-                    <option value="19">Quantity:19</option>
-                    <option value="20">Quantity:20</option>
-                </select>
-                <button id="cartBtn"> <span><i class="fa-solid fa-cart-plus"></i></span> Add to cart</button>
+        <h2>Shopping Cart</h2>
+
+        <div id="itemsCon">
+
+            <div id="cartItems">
+
+                <!-- inflate cart items -->
+               
+                
+            </div>
+            <div>
+
+                <div id="promo">
+                    <div>
+                        <i id="closePromo" class="fa-solid fa-plus"></i>
+                        <h3>Add Promo Code</h3>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Enter promo code</legend>
+                            <input type="text" placeholder="enter code">
+                        </fieldset>
+
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div id="checkout">
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><span id="count">(0)</span>&nbspitem:</td>
+                                <td>INR&nbsp<span id="total"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Sale Savings:</td>
+                                <td>-INR&nbsp<span id="savings"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td>INR&nbsp<span id="subtotal"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div id="bar"></div>
+
+                    <h3>Your Total:&nbsp&nbsp&nbsp&nbspINR&nbsp <span id="yourTotal"></span></h3>
+                    <button id="checkOutButton">Check Out</button>
+
+                </div>
+
             </div>
 
-            <img src="/assets/Screenshot 2022-09-30 105748.png" alt="">
-
-
-
-            
-
         </div>
+
+
 
     </div>
 
@@ -859,10 +878,9 @@
 
 
     </div>
-
     
 </body>
 </html>
 <script src="/scripts/navbar.js"></script>
 <script src="/scripts/dropDown.js"></script>
-<script src="/scripts/view.js"></script>
+<script src="/scripts/cart.js"></script>

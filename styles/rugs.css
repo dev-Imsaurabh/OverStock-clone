@@ -1,0 +1,123 @@
+#container{
+    width: 95%;
+    margin: auto;
+    margin-top: 190px;
+}
+
+#cp1{
+    width: 100%;
+    display: flex;
+
+
+}
+h1{
+    color: #2f3337;
+}
+h2{
+    text-align: center;
+    color: #2f3337;
+    margin-top: 40px;
+
+}
+#cp1>div:nth-child(1){
+    width: 20%;
+    padding: 0px 40px;
+    
+}
+
+#cp1>div:nth-child(2){
+    width: 70%;
+}
+
+#cp1>div:nth-child(2)>img{
+    width: 100%;
+}
+
+#cp1>div:nth-child(1)>p:last-child{
+    color: red;
+}
+
+#cp2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cp2>div{
+    position: relative ;
+
+ 
+}
+
+h6{
+    position: absolute;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: #c7202c;
+    padding: 4px 10px;
+    color: white;
+}
+#cp2>div>img{
+    width: 100%;
+}
+
+#cp4{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+
+}
+select{
+    padding: 8px;
+}
+
+#cp5{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 15px;
+    
+   
+}
+#cp5>div{
+    position: relative;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+#cp5>div>img{
+    width: 100%;
+    max-height: 300px;
+
+}
+#cp5>div>i{
+    position: absolute;
+    margin-right: 16px;
+    right: 0;
+    background-color: white;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+#cp5>div>h3{
+    color: #c7202c;
+    margin-left: 16px;
+}
+#cp5>div>p{
+    color: #2f3337;
+    font-size: 12px;
+    padding: 10px 0px;
+    margin-left: 16px;
+}
+
+#cp6{
+    width: 100%;
+    margin-top: 70px;
+}
+
+#cp6>img{
+    width: 100%;
+}
