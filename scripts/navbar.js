@@ -1,4 +1,17 @@
 isUserAvailable()
+ifTestSignUp()
+
+let c = JSON.parse(localStorage.getItem("ocart"))||[]
+document.querySelector("#cartNum>div").innerText=c.length
+let topcheckout = document.querySelector("#topcheckout");
+
+  if(c.length==0){
+    topcheckout.style.display="none"
+
+  }
+  topcheckout.addEventListener("click",function(event){
+    window.location.href="cart.html"
+})
 
 document.querySelector("#toggle").addEventListener("click",slideTop);
 document.querySelector("#close").addEventListener("click",hideSlideLayout);
@@ -34,6 +47,7 @@ function slideTop(event){
 function hideSlideLayout(event){
     let slideLayout = document.querySelector("#accordian>div:nth-child(1)");
     slideLayout.style.display="none";
+    localStorage.setItem("testSignup","1")
 }
 
 let allTabs = document.querySelectorAll("#tabs");
@@ -44,6 +58,8 @@ hideMenu.forEach(function(el){
     })
 })
 
+
+
 allTabs.forEach(function(el){
     el.addEventListener("mouseover",function(event){
         showDropDown(event)
@@ -52,6 +68,7 @@ allTabs.forEach(function(el){
     
 })
 
+ 
 
 function isUserAvailable(){
     let obj = JSON.parse(localStorage.getItem("loggedUser"))||{}
@@ -63,7 +80,11 @@ function isUserAvailable(){
    if(count>0){
     let name = obj.email
     name = name.substring(0,7)
+    document.querySelector("#topcheckout>i").style.display="none";
     document.querySelector("#username").innerText=name
+    document.querySelector("#myAccount>div>p:nth-child(1)").style.display="none";
+    document.querySelector("#myAccount>div").style.marginTop="110px"
+    document.querySelector("#accordian>div:nth-child(1)").style.display="none";
    }
   
   }
@@ -91,5 +112,40 @@ function isUserAvailable(){
   document.querySelector("#account").addEventListener("click", function (event) {
     window.location.href = "signup.html";
   });
+
+  document.querySelector("#cartImage").addEventListener("click",function(event){
+    window.location.href="cart.html";
+  })
+
+  document.querySelector("#myAccount").addEventListener("mouseover",function(){
+    document.querySelector("#myAccount>div").style.display="block"
+  })
+
+  document.querySelector("#myAccount").addEventListener("mouseout",function(){
+    document.querySelector("#myAccount>div").style.display="none"
+  })
+
+  document.querySelector("#myAccount>div>p:nth-child(2)").addEventListener("click",function(event){
+
+    // localStorage.removeItem("loggedUser");
+    localStorage.clear()
+    window.location.href="signup.html"
+
+  })
+
+  document.querySelector("#myAccount>div>p:nth-child(1)").addEventListener("click",function(event){
+
+    window.location.href="signup.html"
+})
+document.querySelector("#accordian>div:nth-child(3)>div:nth-child(3)>div:nth-child(2)").addEventListener("click",function(){
+  window.location.href="fav.html"
+})
+
+function ifTestSignUp(){
+  if(localStorage.getItem("testSignup")!=null){
+    document.querySelector("#accordian>div:nth-child(1)").style.display="none";
+  }
+}
+
 
 

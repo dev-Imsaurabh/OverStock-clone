@@ -13,8 +13,8 @@ let prod = [
       "https://ak1.ostkcdn.com/images/products/is/images/direct/692886ca451e4d4ee7d90b9cc670b31c7932bcef/Copper-Grove-Aubrieta-3-tier-Single-drawer-End-Table.jpg?imwidth=480&impolicy=medium",
     name: "Copper Grove Cranesbill X-Base 3-Tier End Table with Shelves",
     price: "53009.3",
-    off: "0",
-    strikeOff: "53009.30",
+    off: "12",
+    strikeOff: "46648.184",
   },
   {
     image:
@@ -69,8 +69,8 @@ let prod = [
       "https://ak1.ostkcdn.com/images/products/is/images/direct/094438a4795e6f2d273c9b756ae77a45b09f8d17/Ashlyn-Reversible-Sleeper-Sofa-with-Storage-Chaise.jpg?imwidth=480&impolicy=medium",
     name: "Ashlyn Reversible Sleeper Sofa with Storage Chaise",
     price: "37847.7",
-    off: "0",
-    strikeOff: "37847.70",
+    off: "12",
+    strikeOff: "31035.11",
   },
   {
     image:
@@ -93,8 +93,8 @@ let prod = [
       "https://ak1.ostkcdn.com/images/products/is/images/direct/09b786c3dcc47edf8b7843843e3d9dc54d335e6f/Copper-Grove-Perreux-Linen-Reversible-Sleeper-Sectional-Sofa.jpg?imwidth=480&impolicy=medium",
     name: "Copper Grove Aubrieta1 Drawer Chairside End Table with Shelves",
     price: "40200.21",
-    off: "0",
-    strikeOff: "40200.21",
+    off: "15",
+    strikeOff: "34170.17",
   },
 ];
 inflateProduct(prod);
@@ -110,9 +110,35 @@ function inflateProduct(prod) {
     price.innerText = "Sale Starts at INR " + el.strikeOff;
     let fav = document.createElement("i");
     fav.setAttribute("class", "fa-regular fa-heart");
-    fav.addEventListener("click", function (event) {
-      addToFav(el, index, event);
-    });
+    
+
+
+    let avi = 0
+    favList.forEach(function(found,index){
+
+      if(el.name==found.name){
+        avi=1
+      }
+   
+    })
+
+    if(avi==1){
+      fav.style.backgroundColor="red";
+      fav.style.color="white"
+      fav.style.border="0"
+      fav.addEventListener("click",function(){
+        window.location.href="fav.html"
+      })
+    }else{
+      fav.addEventListener("click", function (event) {
+        addToFav(el, index, event);
+      });
+
+    }
+
+
+
+
     let name = document.createElement("p");
     name.innerText = el.name;
     div.append(sale, fav, img, price, name);
@@ -124,6 +150,11 @@ function inflateProduct(prod) {
     let con = document.querySelector("#cp5");
     con.append(div);
   });
+
+
+
+
+
 }
 
 document.querySelector("#sort").addEventListener("change", sortItems);
@@ -155,4 +186,8 @@ function addToFav(el, index, event) {
   event.target.style.border = "1px solid red";
   event.preventDefault();
   event.stopPropagation();
+  inflateProduct(prod)
 }
+
+
+

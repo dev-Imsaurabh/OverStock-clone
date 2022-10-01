@@ -1,3 +1,4 @@
+
 #container{
     width: 92%;
     margin: auto;
@@ -215,6 +216,78 @@ h1{
     margin: 8px;
     cursor: pointer;
 }
+
+#welcome-main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.4);
+    position: fixed;
+    top: 0;
+    display: none;
+
+    z-index: 50;
+}
+
+
+
+#welcome{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 20;
+    border-radius: 5px;
+    margin-top: 240px;
+    animation-name: example;
+    animation-duration: 2s;
+
+
+}
+
+@keyframes example {
+    from {margin-top: 240px;}
+    to {margin-top: 200px;}
+  }
+
+
+
+#welcome>img{
+    width: 100%;
+    margin-top: 10px;
+
+}
+#welcome>fieldset{
+    margin: auto;
+    width: 80%;
+
+    height: 30px;
+    border-radius: 5px;
+}
+#welcome>fieldset>select{
+width: 100%;
+outline: none;
+border: 0;
+height: 20px;
+}
+#welcome>button{
+    display: block;
+    padding: 8px 20px;
+    margin: auto;
+    font-weight: bold;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    background-color: #2f3337;
+    margin-top: 20px;
+
+}
+
+
+
 
 
 

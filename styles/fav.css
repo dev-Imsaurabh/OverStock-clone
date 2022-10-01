@@ -24,6 +24,7 @@ h2{
     width: 20%;
     position: fixed;
     right: 0;
+    visibility: hidden;
     
     margin-right: 150px;
 
@@ -180,6 +181,7 @@ h3{
 
 #cartItems>div>div fieldset{
     width: 50px;
+    display: none;
 }
 #cartItems select{
     border: none;

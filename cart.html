@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Overstock.com: Online Shopping - Bedding, Furniture, Electronics, Jewelry, Clothing & more</title>
+    <link rel="shortcut icon" type="image" href="https://media.glassdoor.com/sql/14907/overstock-com-squarelogo-1529535998697.png">
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/cart.css">
@@ -54,23 +55,28 @@
 
                 <div>
 
-                    <div>
+                    <div id="myAccount">
                         <img id="account" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
                         <p id="username">Account</p>
+                        <div>
+                            <p>Singin</p>
+                            <p>Signout</p>
+                        </div>
                     </div>
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
                         <p>Lists</p>
                     </div>
 
-                    <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" alt="">
+                    <div id="cartNum">
+                        <img id="cartImage" src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" alt="">
+                        <div></div>
                         <p>Cart</p>
                     </div>
 
                 </div>
 
-                <button><i class="fa-solid fa-lock"></i>&nbspCheck Out</button>
+                <button id="topcheckout"><i class="fa-solid fa-lock"></i>&nbspCheck Out</button>
 
 
 
@@ -780,13 +786,14 @@
                         <i id="closePromo" class="fa-solid fa-plus"></i>
                         <h3>Add Promo Code</h3>
                     </div>
+                    <p>Use Promo Code "OVERSTOCK40" to get 40% off on your total order.</p>
                     <div>
                         <fieldset>
                             <legend>Enter promo code</legend>
-                            <input type="text" placeholder="enter code">
+                            <input id="promoCode" type="text" placeholder="enter code">
                         </fieldset>
 
-                        <button>Apply</button>
+                        <button id="apply">Apply</button>
                     </div>
                 </div>
                 <div id="checkout">
@@ -883,4 +890,5 @@
 </html>
 <script src="/scripts/navbar.js"></script>
 <script src="/scripts/dropDown.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/scripts/cart.js"></script>

@@ -1,4 +1,4 @@
-let cart = JSON.parse(localStorage.getItem("ocart")) || [];
+let cart = JSON.parse(localStorage.getItem("favList")) || [];
 
 let stoggle = 0;
 document.querySelector("#closePromo").addEventListener("click", slidePromo);
@@ -199,8 +199,6 @@ function inflateCart() {
   let yourTotal = document.querySelector("#yourTotal");
   yourTotal.innerText = checkoutPrice.toFixed(2);
   emptyCart()
-  let c = JSON.parse(localStorage.getItem("ocart"))||[]
-  document.querySelector("#cartNum>div").innerText=c.length
 }
 
 function updatePrice(el, index, event) {
@@ -227,10 +225,9 @@ function removeItem(el, index, event, node) {
 
 function removeFromCart(el, index) {
   cart.splice(index, 1);
-  localStorage.setItem("ocart", JSON.stringify(cart));
+  localStorage.setItem("favList", JSON.stringify(cart));
   resetValues()
   inflateCart();
-  
 }
 
 function resetValues() {
@@ -243,16 +240,6 @@ function resetValues() {
 document.querySelector("#apply").addEventListener("click",applyPromo);
 
 function applyPromo(event){
-  if(cart.length==0){
-
-    swal({
-      title: "Empty Cart!",
-      text: "Add Some Item to your Cart !",
-      icon: "error",
-      button: "Let's Shop",
-    });
-    return
-  }
 let promoCode = document.querySelector("#promoCode").value
   if(promoCode==""){
     swal({
@@ -300,29 +287,12 @@ function newTotal(){
 document.querySelector("#checkOutButton").addEventListener("click",CheckOut);
 
 function CheckOut(){
-  if(localStorage.getItem("loggedUser")==null){
-    window.location.href="signup.html"
-    return
-  }
-  if(cart.length>0){
-    localStorage.setItem("checkout",checkoutPrice);
-    window.location.href="payment.html"
-  }else{
-    swal({
-      title: "Empty Cart!",
-      text: "Add Some Item to your Cart !",
-      icon: "error",
-      button: "Let's Shop",
-    });
-  }
- 
+  localStorage.setItem("checkout",checkoutPrice);
+  window.location.href="payment.html"
 }
 
 function emptyCart(){
   if(cart.length==0){
-    document.querySelector("#container>h2:nth-child(1)").innerHTML="Your cart is empty"
-    document.querySelector("#checkout>table").style.display="none";
-    document.querySelector("#bar").style.display="none";
-    document.querySelector("#checkOutButton").innerText="Continue Shopping"
+    document.querySelector("#container>h2:nth-child(1)").innerHTML="Your List is empty"
   }
 }

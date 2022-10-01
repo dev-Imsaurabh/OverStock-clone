@@ -2,7 +2,11 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
 }
+
+
 #navbar{
     position: fixed;
     width: 100%;
@@ -537,6 +541,43 @@ body{
 #homepage{
     cursor: pointer;
 }
+
+
+#myAccount>div{
+    display: none;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    border: 1px solid gray;
+    padding: 0px;
+   text-align: center;
+   cursor: pointer;
+    margin-top: 150px;
+
+
+}
+#myAccount>div>p:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+#myAccount>div>p{
+    font-size: 20px;
+
+}
+#cartNum{
+    position: relative;
+}
+
+#cartNum>div{
+    font-size: 8px;
+    position: absolute;
+    margin-top: -15px;
+    font-weight: bold;
+    color: red;
+    margin-left: 4px;
+}
+
+
 
 
 

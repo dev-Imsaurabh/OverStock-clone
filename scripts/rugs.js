@@ -101,10 +101,32 @@ function inflateProduct(prod){
        sale.innerText="Sale Ends in 2 Days 4 Hours"
        price.innerText="Sale Starts at INR "+el.strikeOff
        let fav = document.createElement("i");
-       fav.setAttribute("class","fa-regular fa-heart")
-       fav.addEventListener("click",function(event){
-        addToFav(el,index,event);
+       fav.setAttribute("class", "fa-regular fa-heart");
+    
+
+
+       let avi = 0
+       favList.forEach(function(found,index){
+   
+         if(el.name==found.name){
+           avi=1
+         }
+      
        })
+   
+       if(avi==1){
+         fav.style.backgroundColor="red";
+         fav.style.color="white"
+         fav.style.border="0"
+         fav.addEventListener("click",function(){
+           window.location.href="fav.html"
+         })
+       }else{
+         fav.addEventListener("click", function (event) {
+           addToFav(el, index, event);
+         });
+   
+       }
        let name = document.createElement("p");
        name.innerText=el.name
        div.append(sale,fav,img,price,name)
@@ -154,5 +176,7 @@ event.preventDefault();
   
   event.preventDefault();
   event.stopPropagation();
+  inflateProduct(prod)
+
 
 }
