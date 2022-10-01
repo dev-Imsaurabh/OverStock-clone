@@ -107,9 +107,12 @@ body{
     background-color: yellowgreen;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
     border: none;
 }
-
+#placeOrder:hover{
+    background-color: rgb(97, 137, 18);
+}
 #footer{
     margin-top: 100px;
     width: 100%;

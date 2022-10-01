@@ -130,7 +130,8 @@ h3{
 
 #checkout>button{
     width: 95%;
-    background-color: black;
+    background-color: #1d1d1d;
+    cursor: pointer;
     color: white;
     padding: 15px;
     display: block;
@@ -210,4 +211,9 @@ h3{
     margin-top: 300px;
     z-index: 10;
     position: relative;
+}
+
+
+#checkout>button:hover{
+background-color: black;
 }
