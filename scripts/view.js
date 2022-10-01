@@ -24,7 +24,8 @@ function AddToCart(event){
         obj.quan = quan
         cart.push(obj)
         localStorage.setItem("ocart",JSON.stringify(cart))
-    }
+        let c = JSON.parse(localStorage.getItem("ocart"))||[]
+        document.querySelector("#cartNum>div").innerText=c.length    }
 }
 
 cart.forEach(el => {
@@ -34,3 +35,5 @@ cart.forEach(el => {
     }
     
 });
+
+document.querySelector("title").innerText=obj.name

@@ -1,0 +1,42 @@
+#container{
+    width: 20%;
+    height: 200px;
+    display: grid;
+    place-content: center;
+    margin: auto;
+    margin-top: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#container>div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+#container>div>input{
+
+    height: 50px;
+    width: 50px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: greenyellow;
+    color: white;
+
+}
+h1{
+    text-align: center;
+}
