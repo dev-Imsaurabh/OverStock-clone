@@ -279,13 +279,16 @@ height: 20px;
     margin: auto;
     font-weight: bold;
     border: 0;
+    cursor: pointer;
     color: white;
     border-radius: 5px;
     background-color: #2f3337;
     margin-top: 20px;
 
 }
-
+#welcome>button:hover{
+    background-color: black;
+}
 
 
 

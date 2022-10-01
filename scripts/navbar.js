@@ -85,6 +85,10 @@ function isUserAvailable(){
     document.querySelector("#myAccount>div>p:nth-child(1)").style.display="none";
     document.querySelector("#myAccount>div").style.marginTop="110px"
     document.querySelector("#accordian>div:nth-child(1)").style.display="none";
+   }else{
+    document.querySelector("#myAccount>div>p:nth-child(2)").style.display="none";
+    document.querySelector("#myAccount>div").style.marginTop="110px"
+
    }
   
   }
@@ -127,8 +131,10 @@ function isUserAvailable(){
 
   document.querySelector("#myAccount>div>p:nth-child(2)").addEventListener("click",function(event){
 
-    // localStorage.removeItem("loggedUser");
-    localStorage.clear()
+    localStorage.removeItem("loggedUser");
+    localStorage.removeItem("ocart")
+    localStorage.removeItem("favList")
+    localStorage.removeItem("testSignup")
     window.location.href="signup.html"
 
   })
