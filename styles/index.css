@@ -291,6 +291,86 @@ height: 20px;
 }
 
 
+@media all and (max-width: 950px) and (min-width:601px){
+
+    #brands{
+
+     
+       grid-template-columns:repeat(2,1fr);
+       grid-template-rows: repeat(2,auto);
+    
+        
+    }
+
+    #dealCard{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+       
+    }
+
+    #categoryCard{
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,auto);
+        
+    }
+
+    #rightSlide{
+        margin-right: 35px;
+    }
+
+ 
+}
+
+@media all and (max-width: 601px) and (min-width:200px){
+
+    #brands{
+
+     
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+     
+         
+     }
+     #dealCard{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+       
+    }
+    #categoryCard{
+        
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,auto);
+        
+    }
+
+    #yourStyle{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+        
+
+
+    }
+
+    #trending{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,auto);
+       
+    
+        
+    }
+
+    #rightSlide{
+        margin-right: 15px;
+    }
+
+  
+
+   
+}
+
+
+
 
 
 

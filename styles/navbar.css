@@ -578,10 +578,100 @@ body{
 }
 
 
+.logoMed{
+    width: 10%;
+}
+.logoSmall{
+    width: 20%;
+
+}
+
+#menu{
+    display: none;
+    font-size: 30px;
+}
 
 
 
 
+
+
+/* media query */
+
+@media all and (max-width: 1100px) and (min-width:601px){
+    #accordian>div:nth-child(3)>div:nth-child(2)>i{
+        width: 7%;
+    }
+    #accordian>div:nth-child(3)>button{
+       display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #accordian>div:nth-child(4){
+        display: none;
+    }
+
+    #accordian>div:nth-child(1)>div:nth-child(2)>p{
+       
+        padding: 9px 20x;
+        text-align: center;
+        font-size: 16px;
+        width: 7%;
+    
+    
+    }
+  
+}
+
+@media all and (max-width: 601px) and (min-width:200px){
+
+    #myAccount{
+        display: none;
+    }
+
+    #accordian>div:nth-child(3)>div:nth-child(2)>i{
+        width: 20%;
+    }
+
+    /* #accordian>div:nth-child(3)>div:nth-child(3)>div:nth-child(2){
+        display: none;
+    } */
+
+    #accordian>div:nth-child(3)>button{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #accordian>div:nth-child(4){
+        display: none;
+        
+    }
+    #accordian>div:nth-child(1){
+        text-align: center;
+    }
+
+    #accordian>div:nth-child(1)>div:nth-child(2)>p{
+       
+        padding: 9px 20x;
+        text-align: center;
+        font-size: 9px;
+        width: 7%;
+    
+    
+    }
+
+   #accordian>div:nth-child(1)>div>div+p{
+    font-size: 11px;    
+   }
+   
+
+   
+
+}
 
 
 

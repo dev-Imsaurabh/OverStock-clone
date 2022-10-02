@@ -153,3 +153,64 @@ h3{
     border: 0;
     background-color: #faf2f2;
 }
+
+
+@media all and (max-width: 950px) and (min-width:601px){
+    #scontainer{
+        flex-direction: column;
+    }
+
+    #signup{
+        width: 80%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    #signin{
+        width: 80%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    #vbar{
+        display: none;
+    }
+    #sfooter{
+        margin-top: 100px;
+        padding: 0px;
+    }
+
+}
+
+@media all and (max-width: 601px) and (min-width:200px){
+    #scontainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    #vbar{
+        display: none;
+    }
+
+    
+#sfooter{
+    margin-top: 100px;
+    padding: 0px;
+}
+
+#signup{
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+#signin{
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+} 
+

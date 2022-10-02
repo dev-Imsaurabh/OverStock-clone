@@ -1,6 +1,7 @@
 #container{
-    width: 20%;
+    width: 30%;
     height: 200px;
+    border-radius: 10px;
     display: grid;
     place-content: center;
     margin: auto;
@@ -39,4 +40,26 @@ button{
 }
 h1{
     text-align: center;
+}
+
+
+
+@media all and (max-width: 950px) and (min-width:601px){
+  
+    #container{
+        width: 50%;
+       
+    
+    }
+}
+
+@media all and (max-width: 601px) and (min-width:200px){
+
+    #container{
+        width: 90%;
+       
+    
+    }
+   
+
 }

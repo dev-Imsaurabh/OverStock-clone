@@ -154,4 +154,39 @@ function ifTestSignUp(){
 }
 
 
+function query(size) {
+  if (size.matches) { 
+    // document.querySelector("#tabs").style.display="none"
+    let logo = document.querySelector("#homepage");
+    logo.src="https://media.glassdoor.com/sqll/14907/overstock-com-squarelogo-1529535998697.png"
+    logo.style.width="30px"
+    logo.style.margin="4px"
+  } else {
+    let logo = document.querySelector("#homepage");
+    logo.src="https://ak1.ostkcdn.com/img/mxc/OSTK_MAIN_LOGO_20181127KCH.jpg"
+    logo.style.width="13%"
+
+  }
+}
+
+let size = window.matchMedia("(max-width: 950px)")
+query(size) // Call listener function at run time
+size.addListener(query) // Attach listener function on state changes
+
+let menuTog =0
+
+document.querySelector("#menu").addEventListener("click",openMenu);
+
+function openMenu(event){
+  let tab=document.querySelector("#accordian>div:nth-child(4)");
+  if(menuTog==0){
+    tab.style.display="block"
+    menuTog=1
+  }else{
+    tab.style.display="none"
+    menuTog=0
+
+  }
+}
+
 

@@ -122,3 +122,48 @@ select{
 #cp6>img{
     width: 100%;
 }
+
+@media all and (max-width: 950px) and (min-width:601px){
+    #cp2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+       
+    }
+
+    #cp5{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,auto);
+        
+       
+    }
+}
+
+@media all and (max-width: 601px) and (min-width:200px){
+    #cp2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+       
+    }
+    #cp5{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12,auto);
+        
+       
+    }
+    #cp1{
+        flex-direction: column;
+        margin: auto;
+    }
+   
+    #cp1>div:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }
+
+    #cp1>div:nth-child(2){
+        width: 100%;
+    }
+}
